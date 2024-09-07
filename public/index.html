@@ -1,0 +1,201 @@
+<html>
+<head>
+
+
+<style>
+body {
+    background-color: #F0F8FF;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: Times New Roman;
+    font-size:20px;
+    font-weight: bolder; */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* font-family: Arial, sans-serif; */
+}
+
+a {
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button1 {
+    background-color: #004098;
+    color: White;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+    border: none;
+    display: inline-block;
+    height: 60px;
+    transition: background-color 1s, color 1s, opacity 1s;
+}
+
+.button1:hover {
+    background-color:;
+    color: black;
+}
+
+.button1:active {
+    opacity: 0.3;
+}
+
+.text {
+    color: black;
+    font-size: 15px;
+}
+
+/* Header styling */
+.h {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.u {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.l {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <header class="h">
+        <nav class="n">
+            <ul class="u">
+                <li class="l"><a href="/home" >Home</a></li>
+                <li class="l"><a href="/survey">Survey</a></li>
+                <li class="l"><a href="/dashboard">Dashboard</a></li>
+                <!-- Add other navigation links here -->
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+<form class="login-form">
+<h2>Login for Users</h2>
+<div class="input-group">
+<label for="mobile">Mobile Number:</label>
+<input type="number" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+</div>
+<div class="input-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+</div>
+<button type="submit"><a href="/survey">Login</a> </button><br><br>
+</form>
+</div>
+
+
+
+<div class="container">
+<form class="login-form">
+<h2>Login for Admin</h2>
+<div class="input-group">
+<label for="mobile">Mobile Number:</label>
+<input type="tel" id="mobile" name="mobile"  placeholder="Enter your mobile number" required>
+</div>
+<div class="input-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+</div>
+<button type="submit"><a href="/dashboard">Login</a> </button><br><br>
+  
+</form>
+</div>
+
+
+
+</body>
+</html>
